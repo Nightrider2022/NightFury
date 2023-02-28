@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>Home Page</title>
+            <link rel="stylesheet" href = "Style.css" >
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+           
+                </head>
+                <body>
+<header>
+    <header>
+        <nav>
+        <img src="logo.jpg">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About me.html">About</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Contactus.html">Contact</a></li>
+    
+    </div>
+    </nav>
+    </header>
+
+    <!--------------------contact form-------------------->
+<main>
+    <section class="contact row">
+        <div class="contact-left">
+            <h1 class="contact sub-title">Contact me</h1>
+           <p><i class="fa-solid fa-phone"></i> Phone Number:1405810004</p>
+            <p><i class="fa-solid fa-envelope"></i> Email id:sattviksaini2022@gmail.com</p>
+        </div>
+        <div class="aboutcol2">
+            <p><span><i class="fa-brands fa-discord"></i></span>Night_fury#2665</p>
+            <p><span><i class="fa-brands fa-facebook"></i></span></p>
+            <p><span><i class="fa-brands fa-linkedin"></i></span></p>
+            <p><span><i class="fa-brands fa-instagram"></i></span></p>
+            <div class="contact-right">
+                <div class="alert">Ask any queries here</div>
+                <form id="contactForm">
+                    <input id="nameField" type="text" name="name" placeholder="Your Name Here Please!" required> <br><br>
+                    <input id="emailField" type="email" name="email" placeholder="Your Email Here Please!" required> <br> <br>
+                    <textarea id="msgField" name="message" rows="10" placeholder="Your Message Here Please!"></textarea> <br>
+                    <button type="Submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="copyright">
+        <center>Copyright &copy; This is made by Nihar <i class="fa-sharp fa-solid fa-heart"></i> from Orchids the International School
+    </footer>
+    <script src="functionality.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyCfpe2rXTtxm6ImjUssxjLhR238-3RgLJo",
+  authDomain: "myproject-e2895.firebaseapp.com",
+  databaseURL:"https://myproject-e2895-default-rtdb.firebaseio.com/",
+  projectId: "myproject-e2895",
+  storageBucket: "myproject-e2895.appspot.com",
+  messagingSenderId: "454317064590",
+  appId: "1:454317064590:web:f61a09fb7788bff96de4df",
+  measurementId: "G-NV0BXETJ23"
+};
+firebase.initializeApp(firebaseConfig)
+</script>
+</body>
+</html>
